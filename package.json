@@ -1,5 +1,5 @@
 {
-  "name": "nourish-ai",
+  "name": "nourishai",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,12 +11,16 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.0",
     "lucide-react": "^0.263.1",
-    "recharts": "^2.12.7"
+    "openai": "^4.20.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "recharts": "^2.8.0",
+    "date-fns": "^2.30.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.4.1",
     "tailwindcss": "^3.4.11",

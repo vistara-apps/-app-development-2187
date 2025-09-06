@@ -15,9 +15,9 @@ export default {
         'text-secondary': 'hsl(200, 30%, 30%)',
       },
       borderRadius: {
-        'sm': '6px',
-        'md': '10px',
         'lg': '16px',
+        'md': '10px',
+        'sm': '6px',
       },
       spacing: {
         'sm': '8px',
@@ -28,20 +28,29 @@ export default {
       boxShadow: {
         'card': '0 4px 12px hsla(210, 30%, 20%, 0.08)',
       },
+      fontFamily: {
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+      },
       animation: {
-        'fade-in': 'fadeIn 0.25s ease-out',
-        'slide-up': 'slideUp 0.25s ease-out',
+        'gradient': 'gradient 15s ease infinite',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+        gradient: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          },
         },
-        slideUp: {
-          '0%': { transform: 'translateY(10px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-      },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        }
+      }
     },
   },
   plugins: [],
